@@ -1,7 +1,7 @@
 /* Master styles */
 body {
     font-family: "Lato", sans-serif;
-    margin: 0px;
+    margin: 30px;
 }
 
 .container {
@@ -115,7 +115,7 @@ body {
 }
 
 .profile-image-wrapper img {
-    width: 100%;
+    width: 60%;
 }
 
 .profile-content-wrapper {
