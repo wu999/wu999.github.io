@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+      <!--a is for hyperlink, href is where it points to -->
+      <div class="container">
+          <div class= "nav-wrapper">
+
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="about.html">About Me</a>
+                    </div>
+                    <!--
+                    <div class="nav-link-wrapper">
+                        <a href="projects.html">Projects</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="art.html">Art</a>
+                    </div>
+                    -->
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>XI WU</div>
+                    </div>
+                </div>
+        </div>
+        
+        <div class= "content-wrapper">
+          <div class="two-column-wrapper">
+              <div class="profile-image-wrapper">
+                  <img src="images/profile.jpg">
+              </div>
+
+              <div class="profile-content-wrapper">
+                  <h1>Hi this is Xi Wu!</h1>
+
+                  <p>
+                    
+                  </p>
+              </div>
+          </div>
+        </div>
+      </div>
+  </body>
+
+  <script>
+      const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+      portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                //console.log(portfolioItem);
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+      })
+  </script>
+  </html>

@@ -1,1 +1,155 @@
-<h1>Xi Wu</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Xi Wu</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+      <!--a is for hyperlink, href is where it points to -->
+      <div class="container">
+          <div class= "nav-wrapper">
+
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About Me</a>
+                    </div>
+                    <!--
+                    <div class="nav-link-wrapper">
+                        <a href="projects.html">Projects</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="art.html">Art</a>
+                    </div>
+                    -->
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>XI WU</div>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class= "portfolio-items-wrapper">
+
+                <div class = "portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image: url(images/color\ table\ Poster.jpg);">
+                    </div>
+
+                    <div class="img-text-wrapper">
+                        <!--
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="">
+                        </div>
+                    -->
+                        <div class="subtitle">
+                            Inverse Color Table Neural Network
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image: url(images/top.png);">
+                    </div>
+
+                    <div class="img-text-wrapper">
+                        <!--
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="">
+                        </div>
+                    -->
+                        <div class="subtitle">
+                            Motion Controlled Smart Home Remote
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image: url(images/cpu.png);">
+                    </div>
+
+                    <div class="img-text-wrapper">
+                        <!--
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="">
+                        </div>
+                    -->
+                        <div class="subtitle">
+                            Computer Designs
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image: url(images/anxiety.png);">
+                    </div>
+
+                    <div class="img-text-wrapper">
+                        <!--
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="">
+                        </div>
+                    -->
+                        <div class="subtitle">
+                            Art and Designs
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image: url(images/Triptic\ Panel\ 3\ detail\ jpeg.jpg);">
+                    </div>
+
+                    <div class="img-text-wrapper">
+                        <!--
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="">
+                        </div>
+                    -->
+                        <div class="subtitle">
+                            Paintings
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image: url(images/plant.jpeg);">
+                    </div>
+
+                    <div class="img-text-wrapper">
+                        <!--
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="">
+                        </div>
+                    -->
+                        <div class="subtitle">
+                            Resume
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+  </body>
+
+  <script>
+      const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+      portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                //console.log(portfolioItem);
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+      })
+  </script>
+  </html>
+
